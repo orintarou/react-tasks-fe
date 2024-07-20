@@ -1,15 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const App = () => {
-	return(
-			<div className="container">
-				<div>Screen Left</div>
-				<div>Screen Right</div>
-			</div>
-		)
-}
-
+import App from './App';
 // Use non-null assertion or a conditional check
 const rootElement = document.getElementById('root');
 
