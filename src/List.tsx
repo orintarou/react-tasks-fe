@@ -14,15 +14,22 @@ const ListItem = styled.div({
   borderBottom: '1px solid #eee'
 });
 
+// Define the ListItemType interface
+interface ListItemType {
+  id: number;
+  note: string;
+}
+
+// Define the ListProps interface
 interface ListProps {
-  items: string[];
+  items: ListItemType[];
 }
 
 const List: React.FC<ListProps> = ({ items }) => {
   return (
     <ListContainer>
-      {items.map((item, index) => (
-        <ListItem key={index}>{item}</ListItem>
+      {items.map((item) => (
+        <ListItem key={item.id}>{item.note}</ListItem>
       ))}
     </ListContainer>
   );
