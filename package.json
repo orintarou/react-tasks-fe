@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/orintarou/react-tasks-fe#readme",
   "dependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "babel-loader": "^9.1.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
