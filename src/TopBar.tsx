@@ -34,6 +34,7 @@ const Item = styled.div({
 interface TopBarType {
   id: number;
   note: string;
+  user: string,
 }
 
 // Define the ListProps interface
@@ -46,7 +47,9 @@ const TopBar: React.FC<TopBarProps> = ({ items }) => {
     <TopBarContainer>
       <ScrollContainer>
         {items.map((item, index) => (
-          <Item key={index}>{item.note}</Item>
+          <Item key={index}>
+            {item.user + ' :' + item.note}
+          </Item>
         ))}
       </ScrollContainer>
     </TopBarContainer>

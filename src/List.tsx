@@ -18,6 +18,7 @@ const ListItem = styled.div({
 interface ListItemType {
   id: number;
   note: string;
+  user: string
 }
 
 // Define the ListProps interface
@@ -29,7 +30,9 @@ const List: React.FC<ListProps> = ({ items }) => {
   return (
     <ListContainer>
       {items.map((item) => (
-        <ListItem key={item.id}>{item.note}</ListItem>
+        <ListItem key={item.id}>
+          {item.note}
+        </ListItem>
       ))}
     </ListContainer>
   );
